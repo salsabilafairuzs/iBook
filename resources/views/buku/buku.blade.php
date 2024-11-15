@@ -191,15 +191,30 @@
                 processData: false,
             })
             .done(function(response) {
-                $('.error, .errorKategori, .errorJudul, .errorPenerbit, .errorDeskripsi, .errorFoto').text('');
+                $('.errorKategori, .errorJudul, .errorPenerbit, .errorDeskripsi, .errorFoto').text('');
 
                 if (response.error) {
-                    Object.keys(response.error).forEach(function(key) {
-                        if (response.error[key]) {
-                            $(`.error${capitalizeFirstLetter(key)}`).text(response.error[key][0]);
-                        }
-                    });
+                    if (response.error.kategori) {
+                        $('.errorKategori').text(response.error.kategori[0])
+                    }
+
+                    if (response.error.judul) {
+                        $('.errorJudul').text(response.error.judul[0])
+                    }
+
+                    if (response.error.penerbit) {
+                        $('.errorPenerbit').text(response.error.penerbit[0])
+                    }
+
+                    if (response.error.deskripsi) {
+                        $('.errorDeskripsi').text(response.error.deskripsi[0])
+                    }
+
+                    if (response.error.foto) {
+                        $('.errorFoto').text(response.error.foto[0])
+                    }
                 }
+
 
                 if (response.sukses) {
                     $('#formBuku')[0].reset();
