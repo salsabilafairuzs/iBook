@@ -2,12 +2,11 @@
     <!-- Sidebar scroll-->
     <div>
         <div class="brand-logo d-flex align-items-center justify-content-between">
-            <a href="/dashboard" class="text-nowrap logo-img">
-                <img src="{{ asset('backend/assets/images/logos/logo2.png') }}" width="180" alt="" />
+            <a href="/dashboard" class="text-nowrap logo-img" style="display: flex; justify-content: center; align-items: center; text-align: center; font-size: 28px; font-weight: bolder; margin-top: 20px; margin-left: 15px; color: black;">
+                iBook
             </a>
             <div class="close-btn d-xl-none d-block sidebartoggler cursor-pointer" id="sidebarCollapse">
-                <i class="ti ti-x fs-8"></i>
-            </div>
+                <i class="ti ti-x fs-8"></i>            </div>
         </div>
         <nav class="sidebar-nav scroll-sidebar" data-simplebar="">
             <ul id="sidebarnav">

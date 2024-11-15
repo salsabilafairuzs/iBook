@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Simpeg+</title>
+  <title>iBook</title>
   <link rel="shortcut icon" type="image/png" href="{{ asset('backend/assets/images/logos/favicon.png') }}" />
   <link rel="stylesheet" href="{{ asset('backend/assets/css/styles.min.css') }}"/>
 </head>
@@ -19,7 +19,7 @@
           <div class="col-md-8 col-lg-6 col-xxl-3">
             <div class="card mb-0">
               <div class="card-body">
-                <h3 class="text-center">iBook</h3>
+                <h3 class="text-center" style="font-size: 36px; font-weight: bold;">iBook</h3>
 
                 <!-- Menampilkan pesan error jika ada -->
                 @if ($errors->any())
